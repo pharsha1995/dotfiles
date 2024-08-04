@@ -5,6 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# source aliases
+source $ZDOTDIR/.zaliases
+
 # history
 HISTSIZE=100000
 SAVEHIST=20000
@@ -15,6 +18,14 @@ setopt hist_ignore_space    # do not record an event starting with a space
 setopt hist_save_no_dups    # do not write a duplicate event to the history file
 setopt inc_append_history   # write to the history file immediately, not when the shell exits
 setopt share_history        # share history between terminals
+
+# completions
+# source $XDG_CONFIG_HOME/zsh/completions.zsh
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+_comp_options+=(globdots)
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump
 
 # theme
 source $XDG_DATA_HOME/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme

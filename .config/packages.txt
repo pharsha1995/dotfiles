@@ -6,3 +6,5 @@ nautilus
 helix
 zsh
 brightnessctl
+eza
+waybar
