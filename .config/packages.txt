@@ -5,3 +5,4 @@ wezterm
 nautilus
 helix
 zsh
+brightnessctl
