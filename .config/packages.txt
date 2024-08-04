@@ -1,0 +1,7 @@
+endeavouros  # no desktop
+hyprland-git
+xdg-desktop-portal-hyprland
+wezterm
+nautilus
+helix
+zsh
