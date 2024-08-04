@@ -8,3 +8,6 @@ zsh
 brightnessctl
 eza
 waybar
+JetBrainsMono Nerd Font (from https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono/Ligatures/Regular or package manager)
+wl-gammarelay-rs
+cloudflare-warp-bin

@@ -61,8 +61,7 @@ tooltip {
 #custom-power,
 #pulseaudio,
 #window,
-#workspaces,
-{
+#workspaces {
     color: @main-fg;
     background: @main-bg;
     opacity: 1;
