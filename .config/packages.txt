@@ -13,3 +13,13 @@ wl-gammarelay-rs
 cloudflare-warp-bin
 hypridle-git
 hyprlock-git
+qbittorrent
+vlc
+inkscape
+foliate
+rustup
+nvm
+pyright
+ruff
+emmet-language-server
+vscode-langservers-extracted
