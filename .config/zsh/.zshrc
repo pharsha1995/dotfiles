@@ -45,3 +45,14 @@ export DOTBARE_TREE="$HOME"
 
 # fzf
 source <(fzf --zsh)
+
+# nvm
+export NVM_DIR="$XDG_DATA_HOME/nvm"
+source /usr/share/nvm/nvm.sh
+source /usr/share/nvm/bash_completion
+source /usr/share/nvm/install-nvm-exec
+
+# rust
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export PATH="$CARGO_HOME/bin:$PATH"
