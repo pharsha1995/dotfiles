@@ -26,3 +26,5 @@ vscode-langservers-extracted
 hyprpaper
 matugen-bin
 xdg-desktop-portal-gtk
+nwg-look
+tofi
