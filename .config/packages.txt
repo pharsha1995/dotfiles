@@ -23,3 +23,5 @@ pyright
 ruff
 emmet-language-server
 vscode-langservers-extracted
+hyprpaper
+matugen-bin

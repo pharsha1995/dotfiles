@@ -1,54 +1,54 @@
 * {
-    border: none;
-    font-family: "JetBrainsMono Nerd Font", icomoon;
-    font-weight: bold;
-    font-size: 12px;
-    min-height: 10px;
+  border: none;
+  font-family: "JetBrainsMono Nerd Font", icomoon;
+  font-weight: bold;
+  font-size: 12px;
+  min-height: 10px;
 }
 
-@import "theme.css";
+@import "colors.css";
 
 window#waybar {
-    background: @bar-bg;
+  background: rgba(0, 0, 0, 0);
 }
 
 tooltip {
-    background: @main-bg;
-    color: @main-fg;
-    border-radius: 7px;
-    border-width: 0px;
+  background: @surface;
+  color: @on_surface;
+  border-radius: 7px;
+  border-width: 0px;
 }
 
 #workspaces button {
-    box-shadow: none;
-    text-shadow: none;
-    padding: 0px;
-    border-radius: 9px;
-    margin-top: 3px;
-    margin-left: 0px;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-right: 0px;
-    color: @main-fg;
-    animation: ws_normal 20s ease-in-out 1;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 9px;
+  margin-top: 3px;
+  margin-left: 0px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-right: 0px;
+  color: @on_surface;
+  animation: ws_normal 20s ease-in-out 1;
 }
 
 #workspaces button.active {
-    background: @wb-act-bg;
-    color: @wb-act-fg;
-    margin-left: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 3px;
-    animation: ws_active 20s ease-in-out 1;
-    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+  background: @inverse_surface;
+  color: @inverse_on_surface;
+  margin-left: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 3px;
+  animation: ws_active 20s ease-in-out 1;
+  transition: all 0.4s cubic-bezier(.55, -0.68, .48, 1.682);
 }
 
 #workspaces button:hover {
-    background: @wb-hvr-bg;
-    color: @wb-hvr-fg;
-    animation: ws_hover 20s ease-in-out 1;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+  background: @primary_container;
+  color: @on_primary_container;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
 }
 
 #custom-cloudflare,
@@ -62,27 +62,32 @@ tooltip {
 #pulseaudio,
 #window,
 #workspaces {
-    color: @main-fg;
-    background: @main-bg;
-    opacity: 1;
-    margin: 4px 0px 4px 0px;
-    padding-left: 4px;
-    padding-right: 4px;
-    border-radius: 5px;
+  color: @on_surface;
+  background: @surface_container;
+  opacity: 1;
+  margin: 4px 0px 4px 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 5px;
 }
 
 #battery.charging {
-    color: #3dea3c;
+  background: @tertiary_fixed;
+  color: @on_tertiary_fixed;
 }
 
 #battery.discharging.warning {
-    color: #e74d1a;
+  color: @on_error;
+  background: @error;
+  opacity: 0.9;
 }
 
 #battery.discharging.critical {
-    color: #e12f2a;
+  color: @on_error;
+  background: @error;
 }
 
 #custom-cloudflare.active {
-    color: #3dea3c;
+  color: @on_primary_fixed;
+  background: @primary_fixed;
 }

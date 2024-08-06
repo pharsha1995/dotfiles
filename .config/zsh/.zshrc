@@ -56,3 +56,6 @@ source /usr/share/nvm/install-nvm-exec
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export PATH="$CARGO_HOME/bin:$PATH"
+
+# add .local/share/bin to path
+export PATH="$XDG_DATA_HOME/bin:$PATH"
