@@ -28,3 +28,5 @@ matugen-bin
 xdg-desktop-portal-gtk
 nwg-look
 tofi
+dunst
+wl-clipboard

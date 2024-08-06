@@ -3,6 +3,7 @@ reload_apps = true
 
 [config.reload_apps_list]
 waybar = true
+dunst = true
 # gtk_theme = true
 
 [templates.waybar]
@@ -12,6 +13,10 @@ output_path = "~/.config/waybar/colors.css"
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland_colors.conf"
 output_path = "~/.config/hypr/colors.conf"
+
+[templates.dunst]
+input_path = "~/.config/matugen/templates/dunst_colors"
+output_path = "~/.config/dunst/dunstrc"
 
 # [templates.gtk3]
 # input_path = "~/.config/matugen/templates/gtk_colors.css"
