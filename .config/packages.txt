@@ -25,3 +25,4 @@ emmet-language-server
 vscode-langservers-extracted
 hyprpaper
 matugen-bin
+xdg-desktop-portal-gtk
